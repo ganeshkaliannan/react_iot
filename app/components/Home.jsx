@@ -17,8 +17,13 @@ class Home extends React.Component {
 
   render(){
   return(
-      <div> IOT Home Page</div>
+      <div> 
+        <h1>IOT sensor App!</h1>
+      </div>
    );
   }
 
 }
+
+
+export default Home;

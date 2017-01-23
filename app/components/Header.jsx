@@ -17,7 +17,7 @@ class Header extends React.Component {
 
   render(){
   return(
-      <div> IOT Header</div>
+      <div>   <h1>IOT sensor App!</h1></div>
    );
   }
 

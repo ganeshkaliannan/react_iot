@@ -5,23 +5,23 @@ import Footer from './Footer.jsx';
 require("./Style.css");
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+	constructor(props) {
+		super(props);
+	}
 
-  componentDidMount() { }
+	componentDidMount() {}
 
-  componentWillUnmount(){ }
+	componentWillUnmount() {}
 
-  render() {
-    return (
-      <div className="Main">
+	render() {
+		return (
+			<div className="Main">
         <Header />
         <Home />
         <Footer />
       </div>
-    );
-  }
+		);
+	}
 }
 
 export default App;

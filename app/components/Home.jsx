@@ -6,51 +6,51 @@ export default class Home extends React.Component {
 
 	constructor(props) {
 		super(props)
+		this.roomStatus.bind(this);
 		this.state = {
-			email: ""
+			rooms: []
 		};
 	}
+
 
 	componentDidMount() {
 		this.get_room_status = setInterval(
 			() => this.roomStatus(),
-			5000
+			1000
 		);
 	}
 
 	roomStatus() {
+		console.log(1234);
 		var _this = this;
-		axios.get('https://mighty-dawn-90967.herokuapp.com//v1/room_status')
+		axios.get('https://mighty-dawn-90967.herokuapp.com/v1/rooms')
 			.then(function(response) {
 				_this.setState({
-					email: response.data.email
+					rooms: response.data
 				});
+				console.log(_this.state.rooms);
 			})
 			.catch(function(error) {
 				console.log(error);
 			});
+
 	}
 
 	componentWillUnmount() {
-		this.get_room_status.abort();
+		clearInterval(this.get_room_status);
 	}
 
 	render() {
 		return (
 			<div className="Main-panel">
-      	<div className="Email">{this.state.email}</div>
-        <div className="Room Room1">
-					<span className="icon-available"></span>
-					<span className="icon-hybris"></span>
+                  {this.state.rooms.map(function(room) {
+          return (
+           <div className="Room Room1">
+             {room.is_occupied? <span className="icon-meeting"></span>:<span className="icon-available"></span>}
+					<span>{room.name}</span>
 				</div>
-				<div className="Room Room2">
-					<span className="icon-meeting"></span>
-					<span className="icon-microsoft"></span>
-				</div>
-				<div className="Room Room3">
-					<span className="icon-available"></span>
-					<span className="icon-magento"></span>
-				</div>
+          );
+        })}
       </div>
 		);
 	}

@@ -37,8 +37,8 @@ export default class Home extends React.Component {
 
 	render() {
 		return (
-			<div>
-      	{this.state.email}
+			<div className="Main-panel">
+      	<div className="Email">{this.state.email}</div>
         <div className="Room">
 					<a href="#">Room 1</a>
 				</div>

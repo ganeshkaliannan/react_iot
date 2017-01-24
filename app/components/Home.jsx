@@ -39,14 +39,17 @@ export default class Home extends React.Component {
 		return (
 			<div className="Main-panel">
       	<div className="Email">{this.state.email}</div>
-        <div className="Room">
-					<a href="#">Room 1</a>
+        <div className="Room Room1">
+					<span className="icon-available"></span>
+					<span className="icon-hybris"></span>
 				</div>
-				<div className="Room">
-					<a href="#">Room 2</a>
+				<div className="Room Room2">
+					<span className="icon-meeting"></span>
+					<span className="icon-microsoft"></span>
 				</div>
-				<div className="Room">
-					<a href="#">Room 3</a>
+				<div className="Room Room3">
+					<span className="icon-available"></span>
+					<span className="icon-magento"></span>
 				</div>
       </div>
 		);

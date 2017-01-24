@@ -16,7 +16,6 @@ export default class Home extends React.Component {
 			() => this.roomStatus(),
 			5000
 		);
-
 	}
 
 	roomStatus() {
@@ -30,9 +29,7 @@ export default class Home extends React.Component {
 			.catch(function(error) {
 				console.log(error);
 			});
-
 	}
-
 
 	componentWillUnmount() {
 		this.get_room_status.abort();
@@ -40,12 +37,11 @@ export default class Home extends React.Component {
 
 	render() {
 		return (
-			<div> 
-      {this.state.email}
+			<div>
+      	{this.state.email}
         <div><a href="#">Room 1</a></div>
-		<div><a href="#">Room 2</a></div>
-		<div><a href="#">Room 3</a></div>
-      
+				<div><a href="#">Room 2</a></div>
+				<div><a href="#">Room 3</a></div>
       </div>
 		);
 	}

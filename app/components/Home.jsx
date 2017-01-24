@@ -43,12 +43,21 @@ export default class Home extends React.Component {
 	render() {
 		return (
 			<div className="Main-panel">
-                  {this.state.rooms.map(function(room) {
+        {this.state.rooms.map(function(room) {
           return (
-           <div className="Room Room1">
-             {room.is_occupied? <span className="icon-meeting"></span>:<span className="icon-available"></span>}
-					<span>{room.name}</span>
-				</div>
+            <div className="Room">
+              {room.is_occupied?
+                <span className="icon-meeting"></span> :
+                <span className="icon-available"></span>
+              }
+						  <span className="status-text">
+						    {room.name} is
+								{room.is_occupied?
+						      <span> Occupied.</span> :
+						      <span> Available.</span>
+						    }
+							</span>
+						</div>
           );
         })}
       </div>

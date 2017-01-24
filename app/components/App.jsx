@@ -5,7 +5,6 @@ import Footer from './Footer.jsx';
 require("./Style.css");
 
 class App extends React.Component {
-
   constructor(props) {
     super(props);
   }

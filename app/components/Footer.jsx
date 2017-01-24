@@ -11,7 +11,9 @@ class Footer extends React.Component {
 
   render(){
 	  return(
-	    <div className="footer">Copyright &copy; 2017. ZINIOS TECHNOLOGIES. All Rights Reserved.</div>
+	    <div className="Footer">
+				Copyright &copy; 2017. ZINIOS TECHNOLOGIES. All Rights Reserved.
+			</div>
 	  );
   }
 }

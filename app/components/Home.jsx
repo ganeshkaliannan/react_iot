@@ -39,9 +39,15 @@ export default class Home extends React.Component {
 		return (
 			<div>
       	{this.state.email}
-        <div><a href="#">Room 1</a></div>
-				<div><a href="#">Room 2</a></div>
-				<div><a href="#">Room 3</a></div>
+        <div className="Room">
+					<a href="#">Room 1</a>
+				</div>
+				<div className="Room">
+					<a href="#">Room 2</a>
+				</div>
+				<div className="Room">
+					<a href="#">Room 3</a>
+				</div>
       </div>
 		);
 	}

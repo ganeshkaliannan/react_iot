@@ -3,25 +3,20 @@ import React from 'react';
 class Header extends React.Component {
 
 	constructor(props){
-	 super(props)
-	 }
+		super(props)
+	}
 
-  componentDidMount(){
+  componentDidMount(){ }
 
-  }
-
-
-  componentWillUnmount(){
-
-  }
+  componentWillUnmount(){ }
 
   render(){
-  return(
-      <div>   <h1>IOT sensor App!</h1></div>
-   );
+	  return(
+			<div className="Header">
+				<span className="icon-zinios"></span>
+			</div>
+	  );
   }
-
 }
-
 
 export default Header;

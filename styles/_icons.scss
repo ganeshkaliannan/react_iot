@@ -1,0 +1,57 @@
+// $fontName: 'iot';
+// $fontPath: './../../fonts';
+//
+// $fallbackSRC: url("#{$fontPath}/#{$fontName}.eot");
+// $src:
+//   url("#{$fontPath}/#{$fontName}.eot?#iefix") format('embedded-opentype'),
+//   url("#{$fontPath}/#{$fontName}.woff") format('woff'),
+//   url("#{$fontPath}/#{$fontName}.ttf") format('truetype'),
+//   url("#{$fontPath}/#{$fontName}.svg?##{$fontName}") format('svg')
+// ;
+//
+// @font-face {
+//   font-family: $fontName;
+//   src:  $fallbackSRC;
+//   src:  $src;
+//   font-weight: normal;
+//   font-style: normal;
+// }
+//
+// [class^="icon-"],
+// [class*=" icon-"] {
+//   cursor: pointer;
+//   font-family: "iot";
+//   font-style: normal;
+//   text-transform: none;
+//   font-variant: normal;
+//   font-weight: normal;
+//   line-height: 1;
+//   speak: none;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+//
+// .icon-available:before {
+//   content: "\e900";
+// }
+// .icon-humidity:before {
+//   content: "\e901";
+// }
+// .icon-hybris:before {
+//   content: "\e902";
+// }
+// .icon-magento:before {
+//   content: "\e903";
+// }
+// .icon-meeting:before {
+//   content: "\e904";
+// }
+// .icon-microsoft:before {
+//   content: "\e905";
+// }
+// .icon-temprature:before {
+//   content: "\e906";
+// }
+// .icon-zinios:before {
+//   content: "\e907";
+// }

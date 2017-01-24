@@ -1,27 +1,19 @@
 import React from 'react';
 
 class Footer extends React.Component {
-
 	constructor(props){
-	 super(props)
-	 }
+		super(props);
+	}
 
-  componentDidMount(){
+  componentDidMount(){ }
 
-  }
-
-
-  componentWillUnmount(){
-
-  }
+  componentWillUnmount(){ }
 
   render(){
-  return(
-      <div> IOT Footer</div>
-   );
+	  return(
+	    <div className="footer">Copyright &copy; 2017. ZINIOS TECHNOLOGIES. All Rights Reserved.</div>
+	  );
   }
-
 }
-
 
 export default Footer;

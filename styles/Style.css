@@ -168,6 +168,9 @@ html, body {
     text-align: center; }
     .Main-panel .Room-panel .status-text {
       margin: 1em 0; }
+    .Main-panel .Room-panel .Img-tag {
+      height: 50px;
+      margin-top: -20px; }
   .Main-panel .Room {
     box-sizing: border-box; }
     .Main-panel .Room a {

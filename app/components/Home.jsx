@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-
+import available from './../../images/Available-tag.png';
+import occupied from './../../images/occupied-tag.png';
 
 export default class Home extends React.Component {
 
@@ -55,6 +56,8 @@ export default class Home extends React.Component {
 	                <span className="icon-Empty"></span>
 	              }
 							</div>
+							{ room.is_occupied ?
+								<img className="Img-tag" src={occupied} />  : <img className="Img-tag" src={available} /> }
 							<div className="status-text">
 								{ room.name } is { room.is_occupied?<span> Occupied.</span> : <span> Available.</span> }
 							</div>

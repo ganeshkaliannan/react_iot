@@ -189,6 +189,8 @@ html, body {
       color: white;
       display: inline-block;
       padding: 2em 0; }
+    .Main-panel .Room .status-text {
+      color: white; }
 
 .Header {
   padding: 1.6em; }

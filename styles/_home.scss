@@ -1,30 +1,42 @@
 html, body {
+  font-family: 'Roboto';
   margin: 0;
   padding: 0;
 }
 .Main {
-  background: url('../images/bg.jpg') no-repeat;
+  background: url('../images/banner.png') no-repeat #282b38;
+  background-size: contain;
   height: 100vh;
-  width: 1200px;
   margin: 0 auto;
 }
 .Main-panel {
+  box-sizing: border-box;
   display: table;
+  padding: 0 4em;
   width: 100%;
-  .Email {
+  .Main-heading {
+    color: #242424;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .Main-sub-heading {
+    color: #333333;
+    font-size: 22px;
+    text-align: center;
+  }
+  .Room-panel {
     color: white;
-    padding: 1em;
+    display: table;
+    float: left;
+    margin: 55px 6%;
+    text-align: center;
+    .status-text {
+      margin: 1em 0;
+    }
   }
   .Room {
-    background: rgba(0,0,0,0.4);
     box-sizing: border-box;
-    border: 3px solid white;
-    border-radius: 5px;
-    float: left;
-    height: 350px;
-    margin: 60px 4%;
-    text-align: center;
-    width: 25%;
     a {
       color: white;
       display: inline-block;

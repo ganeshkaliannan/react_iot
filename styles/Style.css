@@ -115,76 +115,61 @@ table {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-available:before {
-  color: green;
-  content: "\e900";
-  display: block;
-  font-size: 150px;
-  margin: 0.4em 0; }
+.icon-Empty {
+  padding: 4.5em 2.3em; }
+  .icon-Empty:before {
+    color: green;
+    content: "\e900";
+    font-size: 100px; }
 
-.icon-humidity:before {
-  content: "\e901"; }
+.icon-Occupied {
+  padding: 4em 4.2em; }
+  .icon-Occupied:before {
+    color: red;
+    content: "\e901";
+    font-size: 120px; }
 
-.icon-hybris:before {
-  color: white;
-  content: "\e902";
-  display: inline-block;
-  font-size: 24px; }
-
-.icon-magento:before {
-  color: white;
-  content: "\e903";
-  display: inline-block;
-  font-size: 24px; }
-
-.icon-meeting:before {
-  color: red;
-  content: "\e904";
-  display: block;
-  font-size: 150px;
-  margin: 0.4em 0; }
-
-.icon-microsoft:before {
-  color: white;
-  content: "\e905";
-  display: inline-block;
-  font-size: 24px; }
-
-.icon-temprature:before {
-  content: "\e906"; }
-
-.icon-zinios {
-  font-size: 50px;
-  background: white; }
-  .icon-zinios:before {
-    content: "\e907"; }
+.icon-Occupied,
+.icon-Empty {
+  background: white;
+  border-radius: 50%;
+  display: inline-block; }
 
 html, body {
+  font-family: 'Roboto';
   margin: 0;
   padding: 0; }
 
 .Main {
-  background: url("../images/bg.jpg") no-repeat;
+  background: url("../images/banner.png") no-repeat #282b38;
+  background-size: contain;
   height: 100vh;
-  width: 1200px;
   margin: 0 auto; }
 
 .Main-panel {
+  box-sizing: border-box;
   display: table;
+  padding: 0 4em;
   width: 100%; }
-  .Main-panel .Email {
+  .Main-panel .Main-heading {
+    color: #242424;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center; }
+  .Main-panel .Main-sub-heading {
+    color: #333333;
+    font-size: 22px;
+    text-align: center; }
+  .Main-panel .Room-panel {
     color: white;
-    padding: 1em; }
-  .Main-panel .Room {
-    background: rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
-    border: 3px solid white;
-    border-radius: 5px;
+    display: table;
     float: left;
-    height: 350px;
-    margin: 60px 4%;
-    text-align: center;
-    width: 25%; }
+    margin: 55px 6%;
+    text-align: center; }
+    .Main-panel .Room-panel .status-text {
+      margin: 1em 0; }
+  .Main-panel .Room {
+    box-sizing: border-box; }
     .Main-panel .Room a {
       color: white;
       display: inline-block;
@@ -196,8 +181,9 @@ html, body {
   padding: 1.6em; }
 
 .Footer {
-  color: white;
+  color: #64697b;
+  font-size: 12px;
   padding: 1.6em;
-  text-align: right; }
+  text-align: center; }
 
 /*# sourceMappingURL=Style.css.map */

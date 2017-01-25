@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './../../images/logo-grey.png';
 
 class Header extends React.Component {
 
@@ -13,7 +14,7 @@ class Header extends React.Component {
   render(){
 	  return(
 			<div className="Header">
-				<span className="icon-zinios"></span>
+				<img src={logo} alt="logo" />
 			</div>
 	  );
   }

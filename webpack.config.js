@@ -3,12 +3,13 @@ var config = {
 
   output: {
     path: './',
+    publicPath: '/',
     filename: 'index.js',
   },
 
   devServer: {
     inline: true,
-    port: 5000
+    port: 3000
   },
 
   module: {
@@ -32,6 +33,9 @@ var config = {
       test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
       loader: 'file-loader?name=fonts/[name].[ext]'
     }]
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
   }
 }
 

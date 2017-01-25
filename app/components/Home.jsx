@@ -21,14 +21,12 @@ export default class Home extends React.Component {
 	}
 
 	roomStatus() {
-		console.log(1234);
 		var _this = this;
 		axios.get('https://mighty-dawn-90967.herokuapp.com/v1/rooms')
 			.then(function(response) {
 				_this.setState({
 					rooms: response.data
 				});
-				console.log(_this.state.rooms);
 			})
 			.catch(function(error) {
 				console.log(error);

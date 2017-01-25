@@ -2,9 +2,9 @@ var config = {
   entry: './main.js',
 
   output: {
-    path: './',
-    publicPath: './',
-    filename: './index.js',
+    path: '/',
+    publicPath: '/',
+    filename: 'index.js',
   },
 
   devServer: {
@@ -33,9 +33,6 @@ var config = {
       test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
       loader: 'file-loader?name=fonts/[name].[ext]'
     }]
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx']
   }
 }
 

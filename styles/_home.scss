@@ -6,7 +6,6 @@ html, body {
 .Main {
   background: url('../images/banner.png') no-repeat #282b38;
   background-size: contain;
-  height: 100vh;
   margin: 0 auto;
 }
 .Main-panel {
@@ -29,8 +28,11 @@ html, body {
     color: white;
     display: table;
     float: left;
-    margin: 55px 5.8%;
+    margin: 133px 5.8% 80px;
     text-align: center;
+    &:hover .Img-tag{
+      animation: swing 1s 1 ease;
+    }
     .status-text {
       margin: 1em 0;
     }
@@ -49,5 +51,20 @@ html, body {
     .status-text {
       color: white;
     }
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(30deg);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

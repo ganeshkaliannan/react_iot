@@ -4,7 +4,7 @@
   "description": "Iot sensor interface  on react",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "start": "concurrently \"webpack-dev-server --hot\" \"sass --watch styles/main.scss:styles/Style.css\" ",
     "prod": "NODE_ENV=production node server.js",
     "postinstall": "webpack -p"
   },
@@ -30,6 +30,7 @@
   "devDependencies": {
     "node-sass": "^4.3.0",
     "sass-loader": "^4.1.1",
-    "esformatter-jsx": "^7.4.1"
+    "esformatter-jsx": "^7.4.1",
+    "concurrently": "^3.0.0"
   }
 }

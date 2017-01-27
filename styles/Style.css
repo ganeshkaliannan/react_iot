@@ -166,7 +166,7 @@ html, body {
     margin: 133px 5.8% 80px;
     text-align: center; }
     .Main-panel .Room-panel:hover .Img-tag {
-      animation: swing 1s 1 ease; }
+      animation: swing 1s infinite ease; }
     .Main-panel .Room-panel .status-text {
       margin: 1em 0; }
     .Main-panel .Room-panel .Img-tag {
@@ -187,9 +187,9 @@ html, body {
   0% {
     transform: rotate(0deg); }
   30% {
-    transform: rotate(30deg); }
+    transform: rotate(10deg); }
   70% {
-    transform: rotate(-20deg); }
+    transform: rotate(-15deg); }
   100% {
     transform: rotate(0deg); } }
 .soundWave {

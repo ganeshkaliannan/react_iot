@@ -39,10 +39,12 @@ html, body {
     .Img-tag {
       height: 50px;
       margin-top: -20px;
+      position: relative;
     }
   }
   .Room {
     box-sizing: border-box;
+    position: relative;
     a {
       color: white;
       display: inline-block;
@@ -66,5 +68,39 @@ html, body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+.soundWave {
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid red;
+  opacity: 0;
+  animation: soundwave 2s infinite;
+}
+
+@keyframes soundwave {
+  0% {
+    border-width: 1px;
+    height: 0em;
+    width: 0em;
+    opacity: 1;
+  }
+  30% {
+    border-width: 4px;
+    height: 15em;
+    width: 15em;
+    opacity: 0.2;
+  }
+  100% {
+    border-width: 1px;
+    height: 15em;
+    width: 15em;
+    opacity: 0;
   }
 }

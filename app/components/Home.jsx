@@ -50,7 +50,8 @@ export default class Home extends React.Component {
 	            <div className="Room">
 	              {
 									room.is_occupied ?
-	                <span className="icon-Occupied"></span> :
+									<div><span className="soundWave"></span>
+	                <span className="icon-Occupied"></span></div> :
 	                <span className="icon-Empty"></span>
 	              }
 							</div>

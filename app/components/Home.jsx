@@ -17,7 +17,7 @@ export default class Home extends React.Component {
 	componentDidMount() {
 		this.get_room_status = setInterval(
 			() => this.roomStatus(),
-			1000
+			5000
 		);
 	}
 

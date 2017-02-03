@@ -149,6 +149,7 @@ html, body {
   box-sizing: border-box;
   display: table;
   padding: 0 4em;
+  text-align: center;
   width: 100%; }
   .Main-panel .Main-heading {
     color: #242424;
@@ -158,12 +159,12 @@ html, body {
   .Main-panel .Main-sub-heading {
     color: #333333;
     font-size: 22px;
+    margin-bottom: 50px;
     text-align: center; }
   .Main-panel .Room-panel {
     color: white;
-    display: table;
-    float: left;
-    margin: 133px 5.8% 80px;
+    display: inline-block;
+    margin: 83px 5.8% 20px;
     text-align: center; }
     .Main-panel .Room-panel:hover .Img-tag {
       animation: swing 1s infinite ease; }
@@ -183,15 +184,6 @@ html, body {
     .Main-panel .Room .status-text {
       color: white; }
 
-@keyframes swing {
-  0% {
-    transform: rotate(0deg); }
-  30% {
-    transform: rotate(10deg); }
-  70% {
-    transform: rotate(-15deg); }
-  100% {
-    transform: rotate(0deg); } }
 .soundWave {
   position: absolute;
   height: 0;
@@ -204,6 +196,15 @@ html, body {
   opacity: 0;
   animation: soundwave 2s infinite; }
 
+@keyframes swing {
+  0% {
+    transform: rotate(0deg); }
+  30% {
+    transform: rotate(10deg); }
+  70% {
+    transform: rotate(-15deg); }
+  100% {
+    transform: rotate(0deg); } }
 @keyframes soundwave {
   0% {
     border-width: 1px;
@@ -220,12 +221,16 @@ html, body {
     height: 15em;
     width: 15em;
     opacity: 0; } }
+@media screen and (max-width: 1280px) {
+  .Main-panel .Room-panel {
+    margin-top: 30px; } }
 .Header {
   padding: 1.6em; }
 
 .Footer {
   color: #64697b;
   font-size: 12px;
+  margin-top: 50px;
   padding: 1.6em;
   text-align: center; }
 

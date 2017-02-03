@@ -12,6 +12,7 @@ html, body {
   box-sizing: border-box;
   display: table;
   padding: 0 4em;
+  text-align: center;
   width: 100%;
   .Main-heading {
     color: #242424;
@@ -22,13 +23,13 @@ html, body {
   .Main-sub-heading {
     color: #333333;
     font-size: 22px;
+    margin-bottom: 50px;
     text-align: center;
   }
   .Room-panel {
     color: white;
-    display: table;
-    float: left;
-    margin: 133px 5.8% 80px;
+    display: inline-block;;
+    margin: 83px 5.8% 20px;
     text-align: center;
     &:hover .Img-tag{
       animation: swing 1s infinite ease;
@@ -56,6 +57,19 @@ html, body {
   }
 }
 
+.soundWave {
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid red;
+  opacity: 0;
+  animation: soundwave 2s infinite;
+}
+
 @keyframes swing {
   0% {
     transform: rotate(0deg);
@@ -69,19 +83,6 @@ html, body {
   100% {
     transform: rotate(0deg);
   }
-}
-
-.soundWave {
-  position: absolute;
-  height: 0;
-  width: 0;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 1px solid red;
-  opacity: 0;
-  animation: soundwave 2s infinite;
 }
 
 @keyframes soundwave {
@@ -102,5 +103,11 @@ html, body {
     height: 15em;
     width: 15em;
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Main-panel .Room-panel {
+    margin-top: 30px;
   }
 }
